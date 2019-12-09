@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	
+	<title>QuadTree Insert Example</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	
+</head>
+<body>
+	<div id="canvasContainer">
+		<canvas height="500" width="1140" id="canvas"></canvas>
+		<div id="copyContainer">
+			Click to add a point.
+			<button id="return">返回</button>
+		</div>
+	</div>
+	<div id="footer">
+		<a>Created by Wang JingYu</a>
+	</div>
+
+<script type="text/javascript">
+	var returnx =document.getElementById("return");
+	returnx.onclick = function()
+	{
+		window.location.href="collision.html";
+	}
+</script>
+	<script src="scripts/easel.js"></script>
+	<script src="../src/QuadTree.js"></script>
+	<script src="scripts/insert.js"></script>
+</body>
+</html>

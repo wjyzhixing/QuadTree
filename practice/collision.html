@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>QuadTree Collision Detection Example</title>
+
+	<script src="scripts/easel.js"></script>
+	<script src="../src/QuadTree.js"></script>
+	<script src="scripts/Circle.js"></script>
+	<script src="scripts/collision.js"></script>
+	<link rel="stylesheet" href="styles/styles.css">
+	
+</head>
+<body>
+
+	<div id="canvasContainer" align="center">
+	<canvas height="500" width="1140" id="canvas"></canvas>
+	<canvas height="500" width="1140" id="quadCanvas"></canvas>
+		<div id="copyContainer">
+			<input type="checkbox"  id="showQuadCheck" checked="check" /> Show QuadTree Boundaries
+			<span id="countLinks">Circles : <a href="collision.html?circleCount=10">10</a> | 
+				<a href="collision.html?circleCount=100">100</a> | 
+				<a href="collision.html?circleCount=250">250</a> | 
+				<a href="collision.html?circleCount=500">500</a>|
+				<a href="collision.html?circleCount=1000">1000</a>|
+				<a href="collision.html?circleCount=1500">1500</a>|
+				<a href="collision.html?circleCount=2000">2000</a>|
+				<button id="stop">停止</button>
+				<button id="start">继续</button>
+				<button id="insert">插入测试</button>
+				<button id="retrieve">检索测试</button>
+			</span>
+		</div>
+	<div>
+
+	<div id="footer">
+		<a>Created and Amend by Wang JingYu</a>
+	</div>
+
+<script type="text/javascript">
+	var insert = document.getElementById("insert");
+	insert.onclick = function()
+	{
+		window.location.href="insert.html";
+	}
+
+	var retrieve = document.getElementById("retrieve");
+	retrieve.onclick = function()
+	{
+		window.location.href="retrieve.html";
+	}
+</script>
+</body>
+</html>

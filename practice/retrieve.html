@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<meta name="author" content="Mike Chambers" /> 
+	<meta name="keywords" content="" /> 
+	<meta name="description" content="" /> 
+	<meta name="copyright" content="Mike Chambers" /> 
+	<meta name="robots" content="index,follow" /> 	
+	
+	<title>QuadTree Retrieve Example</title>
+
+	<script src="scripts/easel.js"></script>
+	<script src="../src/QuadTree.js"></script>
+	<script src="scripts/retrieve.js"></script>
+	<link rel="stylesheet" href="styles/styles.css">
+	
+</head>
+<body>
+	<div id="canvasContainer">
+		<canvas height="500" width="1140" id="canvas"></canvas>
+		<div id="copyContainer">
+			Click to highlight all points in a region.
+			<button id="return">返回</button>
+		</div>
+	</div>
+	<div id="footer">
+		<a>Created by Wang JingYu</a>
+	</div>
+
+<script type="text/javascript">
+	var return2 = document.getElementById('return');
+	return2.onclick = function()
+	{
+		window.location.href="collision.html"
+	}
+</script>
+</body>
+</html>
